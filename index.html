@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <!-- tailwindcss -->
+   <link rel="stylesheet" href="/dist/output.css">
+   <!-- alpinejs -->
+   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   <title>Responesive Navbar</title>
+</head>
+
+<body class="">
+   <nav x-data="{navOpen : true}" class="font-poppins py-6  sticky top-0 bg-white border-b-[3px] border-black">
+      <div class="container mx-auto">
+         <div class="flex justify-between items-center   ">
+            <h1 class="text-3xl font-bold order-1 sm:order-2 ">Faqih</h1>
+            <img @click="navOpen = !navOpen" src="src/img/hamburger-menu.svg" class="order-2 lg:hidden sm:order-1">
+            <div class="order-2 hidden lg:block">
+               <ul class="flex gap-12 items-center font-jakarta">
+                  <li><a href="" class="text-slate-900 font-bold text-lg hover:text-slate-500">Home</a></li>
+                  <li><a href="" class="text-slate-900 font-bold text-lg hover:text-slate-500">Service</a></li>
+                  <li><a href="" class="text-slate-900 font-bold text-lg hover:text-slate-500">About</a></li>
+               </ul>
+            </div>
+            <div class="order-3 hidden sm:block">
+               <button class="btn">Login</button>
+               <button class="btn">Sign Up</button>
+            </div>
+         </div>
+      </div>
+      <div x-show="navOpen" 
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 scale-90"
+         x-transition:enter-end="opacity-100 scale-100"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100 scale-100"
+         x-transition:leave-end="opacity-0 scale-90"
+         x-data="{open : false}" 
+         class="fixed bottom-3 right-4 left-4  p-4 border-[3.5px] rounded-[20px] bg-white border-black lg:hidden">
+         <ul class="flex gap-7 justify-center">
+            <li><a href="" class="font-semibold hover:text-gray-500">Home</a></li>
+            <li><a href="" class="font-semibold hover:text-gray-500">Services</a></li>
+            <li><a href="" class="font-semibold hover:text-gray-500">About</a></li>
+            <li><button @click="open = !open" href="" class="font-semibold hover:text-gray-500">More</button></li>
+         </ul>
+         <div x-show="open"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90"
+            class="absolute w-[66%] bottom-20  left-[40%] -translate-x-[36%] flex gap-1">
+            <button class="btn">Login</button>
+            <button class="btn">Sign Up</button>
+         </div>
+      </div>
+   </nav>
+   <div class="container">
+      <div class="w-full flex justify-center items-center">
+         <h1 class="font-bold text-3xl">your-content your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content  your-content</h1>
+      </div>
+   </div>
+</body>
+
+</html>
