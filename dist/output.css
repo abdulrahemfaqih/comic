@@ -734,12 +734,12 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.font-poppins {
-  font-family: Poppins;
-}
-
 .font-jakarta {
   font-family: Plus Jakarta Sans;
+}
+
+.font-poppins {
+  font-family: Poppins;
 }
 
 .text-3xl {
@@ -820,10 +820,6 @@ video {
 
   .sm\:block {
     display: block;
-  }
-
-  .sm\:hidden {
-    display: none;
   }
 }
 
