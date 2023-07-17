@@ -8,7 +8,7 @@
       @apply border-[3px] border-black rounded-[20px] bg-slate-300 font-bold py-2 px-7 text-sm hover:bg-white
    }
    .btn-hero {
-      @apply flex items-center border-[3px] text-sm border-black  mx-auto  gap-2 shadow-2xl;
+      @apply flex justify-center items-center border-[3px] text-sm border-black  gap-2 shadow-2xl;
    }
 }
 
